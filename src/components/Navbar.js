@@ -5,7 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import logo from "../assets/wordmark.svg"
+import logo from "../assets/kributlogo.jpg"
 import { ShoppingBag } from '@mui/icons-material';
 import { Badge } from '@mui/material';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
@@ -42,7 +42,7 @@ export default function Navbar() {
             aria-label="menu"
             sx={{ mr: 2 }}
           >
-            <img src={logo} alt='logotipo' style={{ width: '80px', height: '50px' }}/>
+            <img src={logo} alt='logotipo' style={{ width: '130px', height: '50px' }}/>
           </IconButton>
           </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, color: 'black'}}>

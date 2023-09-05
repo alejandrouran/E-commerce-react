@@ -24,7 +24,7 @@ const RootContainer = styled('div')(({ theme }) => ({
 const CheckoutPage = () => {
   const [{basket}, dispatch] = useStateValue();
   const FormRow = () => (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box sx={{ flexGrow: 1, margin: '20px', display: 'flex', justifyContent: "center" }}>
       <React.Fragment>
         {basket?.map((item) => (
           <Grid item xs={12} sm={8} md={6} lg={4} key={item.id}>

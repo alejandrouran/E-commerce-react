@@ -38,7 +38,7 @@ export default function CheckoutCard({product : {id, name, productType, image, p
   })
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 345, margin: '12px' }}>
       <CardHeader
         
         action={
@@ -59,15 +59,9 @@ export default function CheckoutCard({product : {id, name, productType, image, p
         title={name}
       />
     
-      <CardActions disableSpacing sx={{ display: "flex", justifyContent: "space-between" }}>
+      <CardActions disableSpacing sx={{ display: "flex", justifyContent:"space-between", textAlign: "center" }}>
        
-       <div>
-        {Array(rating)
-        .fill()
-        .map((_, i) => (
-            <p>&#11088;</p>
-        ))}
-      </div>
+       
         
       </CardActions>
       <IconButton>
