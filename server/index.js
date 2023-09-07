@@ -11,7 +11,6 @@ app.use(express.json())
 
 app.post('/api/checkout', async (req, res) => {
     console.log(req.body);
-    res.send("recibido");
     const { id, amount } = req.body;
 
 
@@ -23,8 +22,8 @@ app.post('/api/checkout', async (req, res) => {
             payment_method: id,
             confirm: true,
         });
-        console.log(payment)
-        return res.status(2000).json({ message: "Succesful payment" })
+        console.log(payment);
+        return res.status(200).json({ message: "Succesful payment" })
     }   catch(error){
         return res.json({message: error.raw.message})
     }

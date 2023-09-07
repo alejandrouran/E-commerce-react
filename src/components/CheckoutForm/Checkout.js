@@ -4,11 +4,14 @@ import { Paper, Step, StepLabel, Stepper, Typography } from '@mui/material';
 import AddressForm from "./AddressForm";
 import PaymentForm from "./PaymentForm";
 import { useState } from 'react';
+import Confirmation from './Confirmation';
+import { useStateValue } from '../../StateProvider';
 
 
 const Checkout = () => {
     const classes = useStyles();
     const [activeStep, setActiveStep] = useState(0);
+    const [{ paymentMessage }, dispatch] = useStateValue();
     const steps = ["Shipping address", "Payment details"];
 
     const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -31,7 +34,10 @@ const Checkout = () => {
                   ))}
 
             </Stepper>
-            <Form/>
+            {
+              activeStep === steps.length ? (<Confirmation message={paymentMessage}/>) : (<Form/>)
+             }
+            
           </Paper>
           
         </main>
