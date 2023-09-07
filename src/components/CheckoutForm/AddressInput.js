@@ -1,21 +1,45 @@
-import { Grid } from "@mui/material";
-import { Controller, useFormContext } from "react-hook-form";
+import * as React from 'react';
+import Grid from '@mui/material/Grid';
+import { useFormContext, Controller } from "react-hook-form";
+import { TextField } from '@mui/material';
 
+const AddressInput = ({name, label, required}) => {
 
-const AddressInput = ({ name, label, requitred }) => {
-    const { control } = useFormContext();
-    return (
-        <Grid item xs={12} sm={6}>
-            <Controller as={TextField} 
-                control={control}
-                fullWidth
-                defaultValue=''
-                name={name}
-                label={label}
-                requitred={requitred}
+    const {control} = useFormContext()
+
+  return (
+
+    <Grid item xs={12} sm={6}>
+
+        <Controller control={control} defaultValue="" name={name} 
+
+        render={({field: { onChange, value}})=>(
+
+            <TextField 
+
+            onChange={onChange}
+
+            value={value}
+
+            required={required}
+
+            label={label}
+
+            fullWidth
+
+            variant="standard"
+
             />
-        </Grid>
-    )
+
+        )}
+
+        />
+
+    </Grid>
+
+  )
+
 }
+
 
 export default AddressInput;

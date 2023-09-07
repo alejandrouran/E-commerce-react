@@ -1,7 +1,7 @@
-import { makeStyles } from "@mui/material";
+import { styled } from '@mui/material/styles';
 
 
-export default makeStyles((theme) => ({
+export default styled((theme) => ({
     appBar: {
         position: "relative",
     },
