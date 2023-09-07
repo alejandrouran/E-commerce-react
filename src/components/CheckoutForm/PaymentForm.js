@@ -46,8 +46,8 @@ const CheckoutForm = ({backStep, nextStep}) => {
     if (!error){
       const { id } = paymentMethod;
       try{
-        const { data } = await axios.post("http://localhost:3001/api/checkout", {
-        id,
+        const { data } = await axios.post("http://localhost:3001/api/checkout",
+        { id,
         amount: getBasketTotal(basket) * 100,
       })
       console.log(data);

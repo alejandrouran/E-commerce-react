@@ -14,7 +14,7 @@ const Checkout = () => {
     const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
     const backStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
 
-    const Form = () => activeStep === 0 ? <AddressForm nextStep={nextStep}/> : <PaymentForm/>
+    const Form = () => activeStep === 0 ? <AddressForm nextStep={nextStep}/> : <PaymentForm backStep={ backStep }nextStep={nextStep}/>
 
 
     return (
