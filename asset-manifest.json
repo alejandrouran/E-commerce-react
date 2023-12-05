@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3ad552fa.css",
-    "main.js": "/static/js/main.cab388ab.js",
-    "static/js/787.8f360ba4.chunk.js": "/static/js/787.8f360ba4.chunk.js",
-    "static/media/kributlogo.jpg": "/static/media/kributlogo.cfa8d9f2138e4dad3b3c.jpg",
-    "index.html": "/index.html",
-    "main.3ad552fa.css.map": "/static/css/main.3ad552fa.css.map",
-    "main.cab388ab.js.map": "/static/js/main.cab388ab.js.map",
-    "787.8f360ba4.chunk.js.map": "/static/js/787.8f360ba4.chunk.js.map"
+    "main.css": "/e-commerce-react/static/css/main.3ad552fa.css",
+    "main.js": "/e-commerce-react/static/js/main.1d908753.js",
+    "static/js/787.8f360ba4.chunk.js": "/e-commerce-react/static/js/787.8f360ba4.chunk.js",
+    "static/media/kributlogo.jpg": "/e-commerce-react/static/media/kributlogo.cfa8d9f2138e4dad3b3c.jpg",
+    "index.html": "/e-commerce-react/index.html",
+    "main.3ad552fa.css.map": "/e-commerce-react/static/css/main.3ad552fa.css.map",
+    "main.1d908753.js.map": "/e-commerce-react/static/js/main.1d908753.js.map",
+    "787.8f360ba4.chunk.js.map": "/e-commerce-react/static/js/787.8f360ba4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3ad552fa.css",
-    "static/js/main.cab388ab.js"
+    "static/js/main.1d908753.js"
   ]
 }
