@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3ad552fa.css",
+    "main.js": "/static/js/main.cab388ab.js",
+    "static/js/787.8f360ba4.chunk.js": "/static/js/787.8f360ba4.chunk.js",
+    "static/media/kributlogo.jpg": "/static/media/kributlogo.cfa8d9f2138e4dad3b3c.jpg",
+    "index.html": "/index.html",
+    "main.3ad552fa.css.map": "/static/css/main.3ad552fa.css.map",
+    "main.cab388ab.js.map": "/static/js/main.cab388ab.js.map",
+    "787.8f360ba4.chunk.js.map": "/static/js/787.8f360ba4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3ad552fa.css",
+    "static/js/main.cab388ab.js"
+  ]
+}
